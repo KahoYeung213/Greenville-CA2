@@ -1,0 +1,175 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$btn-border-radius: 30px; 
+
+$paragraph-margin-bottom: 0rem;
+
+@import "../node_modules/bootstrap/scss/variables";
+
+p {
+  margin-bottom: $paragraph-margin-bottom !important;
+}
+
+$btn-border-radius: $btn-border-radius;
+
+.btn-group{
+    position:relative;
+    z-index: 2;
+    margin-top: -100px;
+}
+
+.btn-group label {
+    width: 250px; 
+    border-radius: $btn-border-radius;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        background-color: #ccc; 
+    }
+
+    border: none;
+
+}
+
+
+.btn-custom::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    height: 100%;
+    width: 1px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.btn-group input[type="radio"].btn-check:checked + label {
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: inherit;
+}
+
+.btn-group input[type="radio"].btn-check:not(:checked) + label {
+    font-weight: normal;
+    background-color: #EFEDEA;
+    color: inherit;
+    &:hover {
+        background-color: #b3b3b3; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.btn-group input[type="radio"].btn-check:checked + label i {
+    color: #D35936;
+}
+
+.btn-group input[type="radio"].btn-check:not(:checked) + label i {
+    color: #000000;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+
+    .text-off,
+    .text-on {
+        padding: 0.5em;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+
+        input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+        }
+    }
+}
+
+#heart-checkbox {
+    display: none; 
+}
+
+#heart-checkbox + label {
+    position: relative;
+}
+
+.heart-container {
+    display: inline-block;
+    background-color: #0E3E4E; 
+    padding: 10px; 
+    border-radius: 0px 25px 0px 25px; 
+}
+
+#heart-checkbox + label .bi-heart-fill {
+    display: inline-block;
+    color: white; 
+}
+
+#heart-checkbox:checked + label .bi-heart-fill {
+    color: red; 
+}
+
+// .circle-container {
+//     position: relative;
+//     top: 35%;
+//     left: 65%;
+//     transform: translate(-50%, -50%);
+//     z-index: 1; 
+//     align-items: center;
+//     justify-content: center;
+// }
+
+
+.circle {
+    width: 525px;
+    height: 525px;
+    background-color: #5F7A80;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.circle img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.col-md-6 {
+    justify-content: space-around;
+    align-items: start;
+    display:grid;
+}
+
+.col-md-6 h4{
+ line-height: 150%;
+ margin-right: 250px;
+}
+
+.col-md-6 h1{
+    line-height: 130%;
+    margin-right: 250px;
+   }
+
+
+
