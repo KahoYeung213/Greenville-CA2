@@ -23,39 +23,54 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
+  <nav
+  class="navbar fixed-top navbar-expand-lg bg-primary py-3"
+>
+  <div class="container-xl">
+    <img src="images/logo.png" width="122" alt="Logo">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+       
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="rounded-2 fs-5 d-flex p-3 border-0 ms-5">
+          <i class="bi bi-clock-history me-2"></i>
+          <p class="mb-0 fw-semibold">Past orders</p>
+        </button>
 
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
+        <button class="rounded-2 fs-5 d-flex p-3 border-0 ms-5">
+          <i class="bi bi-heart-fill text-danger me-2"></i>
+          <p class="mb-0 fw-semibold">Favourites</p>
+        </button>
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
+        <button class="rounded-2 fs-5 d-flex p-3 border-0 ms-5 me-8">
+          <i class="bi bi-basket-fill me-2"></i>
+          <p class="mb-0 fw-semibold">Basket</p>
+        </button>
+
+        <i class="bi bi-filter-right text-light ms-2 fs-1"></i>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
+
+  
 
 
-  <div class="container-fluid py-5 mb-5">
+
+
+  <div class="container-fluid py-5 mt-8 mb-5">
     <div class="container-lg">
       <div class="row align-items-center">
         <div class="col-md-6 text-dark">
@@ -70,7 +85,7 @@
               <div class="rounded-5 d-flex shadow p-3 mb-5">
                 <img src="images/sandwhich 1.jpg" alt="food image 1" class="square-image" width="75" height="75">
                 <div class="ms-4">
-                  <p class="fs-5 fw-bold">Pulled Pork</p class="fs-5 fw-bold">
+                  <p class="fs-5 fw-bold mb-0">Pulled Pork</p class="fs-5 fw-bold">
                   <div class="rating">
                     <i class="bi bi-star-fill text-warning"></i>
                     <i class="bi bi-star-fill text-warning"></i>
@@ -78,7 +93,7 @@
                     <i class="bi bi-star-fill text-warning"></i>
                     <i class="bi bi-star-fill text-secondary"></i>
                   </div>
-                  <p class="fs-5 fw-bold">€10.99</p>
+                  <p class="fs-5 fw-bold mb-0">€10.99</p>
                 </div>
               </div>
             </div>
@@ -87,7 +102,7 @@
               <div class="rounded-5 d-flex shadow p-3 mb-5">
                 <img src="images/sandwich2.jpg" alt="food image 2" class="square-image" width="75" height="75">
                 <div class="ms-4">
-                  <p class="fs-5 fw-bold">Cranberry Bomb</p class="fs-5 fw-bold">
+                  <p class="fs-5 fw-bold mb-0">Cranberry Bomb</p class="fs-5 fw-bold">
                   <div class="rating">
                     <i class="bi bi-star-fill text-warning"></i>
                     <i class="bi bi-star-fill text-warning"></i>
@@ -95,7 +110,7 @@
                     <i class="bi bi-star-fill text-warning"></i>
                     <i class="bi bi-star-fill text-secondary"></i>
                   </div>
-                  <p class="fs-5 fw-bold">€12.99</p>
+                  <p class="fs-5 fw-bold mb-0">€12.99</p>
                 </div>
               </div>
             </div>
@@ -111,7 +126,7 @@
           <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
             <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off" checked />
             <label class="btn" for="btnradio12">
-              <p><i class="bi bi-bicycle"></i> Delivery</p>
+              <p class="mb-0"><i class="bi bi-bicycle"></i> Delivery</p>
               30-40mins
             </label>
 
@@ -119,7 +134,7 @@
             <label class="btn btn-outline-dark" for="btnradio22">
               <i class="bi bi-person"></i> Collection
               <span>
-                <p>15-20mins</p>
+                <p class="mb-0">15-20mins</p>
               </span>
             </label>
           </div>
@@ -143,7 +158,7 @@
   <div class="container-fluid py-5 mb-5">
     <div class="container-lg">
       <div class="row">
-        
+
         <div class="col-3 rounded-4 bg-dark">
           <div class="heart-container ms-3 p-3">
             <input type="checkbox" id="heart-checkbox" />
@@ -155,6 +170,98 @@
       </div>
     </div>
   </div>
+
+
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">Some text goes here.</p>
+          </div>
+          <div class="heart-container ms-3 p-3">
+            <input type="checkbox" id="heart-checkbox-1" />
+            <label for="heart-checkbox-1">
+              <i class="bi bi-heart-fill"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-3 mb-4">
+            <div class="card position-relative">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title">Card 1</h5>
+                <p class="card-text">Some text goes here.</p>
+              </div>
+              <div class="heart-container p-3">
+                <input type="checkbox" id="heart-checkbox-1" />
+                <label for="heart-checkbox-1">
+                  <i class="bi bi-heart-fill"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="col-md-3 mb-4">
+            <div class="card position-relative">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title">Card 2</h5>
+                <p class="card-text">Some text goes here.</p>
+              </div>
+              <div class="heart-container p-3">
+                <input type="checkbox" id="heart-checkbox-2" />
+                <label for="heart-checkbox-2">
+                  <i class="bi bi-heart-fill"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="col-md-3 mb-4">
+            <div class="card position-relative">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title">Card 3</h5>
+                <p class="card-text">Some text goes here.</p>
+              </div>
+              <div class="heart-container p-3">
+                <input type="checkbox" id="heart-checkbox-3" />
+                <label for="heart-checkbox-3">
+                  <i class="bi bi-heart-fill"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="col-md-3 mb-4">
+            <div class="card position-relative">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title">Card 4</h5>
+                <p class="card-text">Some text goes here.</p>
+              </div>
+              <div class="heart-container p-3">
+                <input type="checkbox" id="heart-checkbox-4" />
+                <label for="heart-checkbox-4">
+                  <i class="bi bi-heart-fill"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

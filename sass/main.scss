@@ -1,9 +1,8 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 
-$btn-border-radius: 30px; 
 
-$paragraph-margin-bottom: 0rem;
+$btn-border-radius: 30px; 
 
 //Spacers
 
@@ -21,7 +20,7 @@ $spacers: (
 
 ) !default;
 
-
+$primary: #4B6468;
 $secondary:#F4F4BE;
 
 .fw-extrabold {
@@ -159,8 +158,6 @@ $btn-border-radius: $btn-border-radius;
     color: red; 
 }
 
-
-
 .circle {
     width: 525px;
     height: 525px;
@@ -200,6 +197,8 @@ $btn-border-radius: $btn-border-radius;
 .red{
     border: red 1px solid;
 }
+
+
 
 
 
