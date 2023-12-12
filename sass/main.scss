@@ -1,10 +1,41 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+
 
 $btn-border-radius: 30px; 
 
 $paragraph-margin-bottom: 0rem;
 
+//Spacers
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+
+) !default;
+
+
+$secondary:#F4F4BE;
+
+.fw-extrabold {
+    font-weight: 800 !important;
+}
+
+
+.container-fluid.bg-secondary {
+    background-color: $secondary;
+  }
+
 @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
 
 p {
   margin-bottom: $paragraph-margin-bottom !important;
@@ -15,7 +46,7 @@ $btn-border-radius: $btn-border-radius;
 .btn-group{
     position:relative;
     z-index: 2;
-    margin-top: -100px;
+    margin-top: -150px;
 }
 
 .btn-group label {
@@ -116,7 +147,7 @@ $btn-border-radius: $btn-border-radius;
     display: inline-block;
     background-color: #0E3E4E; 
     padding: 10px; 
-    border-radius: 0px 25px 0px 25px; 
+    border-radius: 0px 32px 0px 32px; 
 }
 
 #heart-checkbox + label .bi-heart-fill {
@@ -128,15 +159,6 @@ $btn-border-radius: $btn-border-radius;
     color: red; 
 }
 
-// .circle-container {
-//     position: relative;
-//     top: 35%;
-//     left: 65%;
-//     transform: translate(-50%, -50%);
-//     z-index: 1; 
-//     align-items: center;
-//     justify-content: center;
-// }
 
 
 .circle {
@@ -155,7 +177,7 @@ $btn-border-radius: $btn-border-radius;
     max-height: 100%;
 }
 
-.col-md-6 {
+.row {
     justify-content: space-around;
     align-items: start;
     display:grid;
@@ -164,12 +186,21 @@ $btn-border-radius: $btn-border-radius;
 .col-md-6 h4{
  line-height: 150%;
  margin-right: 250px;
+ font-weight: 500;
 }
 
-.col-md-6 h1{
-    line-height: 130%;
-    margin-right: 250px;
-   }
+
+
+   .square-image {
+    object-fit: cover;
+    border-radius: 15px 15px 15px 15px; 
+  }
+
+
+.red{
+    border: red 1px solid;
+}
 
 
 
+   @import "../node_modules/bootstrap/scss/bootstrap";
