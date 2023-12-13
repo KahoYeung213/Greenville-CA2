@@ -37,6 +37,20 @@ $secondary:#F4F4BE;
 $tertiary: #4F5D62;
 $customcolour: #C1F1C6;
 $footercolour: #7F9599;
+$basketbg:#F4D9BE;
+
+.basket{
+    background-color: $basketbg;
+    background-image: url(/images/Desktop\ -\ 1140px\ \(Recommended\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:bottom;}
+
+
+.rounded-4{
+    overflow: auto;
+    height: 100%;
+}
 
 .footer{
     background-color: $footercolour;
@@ -47,7 +61,21 @@ $footercolour: #7F9599;
 }
 
 
+.product-add:hover {
+    color: $footercolour !important; 
+  }
 
+  .product-add {
+    transition: color 0.3s ease;
+  }
+
+.category-box:hover {
+    background-color: $customcolour !important; 
+  }
+
+  .category-box {
+    transition: background-color 0.5s ease;
+  }
 .fw-extrabold {
     font-weight: 800 !important;
 }
@@ -153,148 +181,35 @@ $footercolour: #7F9599;
         }
     }
 }
+  
+.heart-checkbox {
+    display: none;
+  }
 
-// .heart-checkbox {
-//     display: none;
-//   }
+  .heart-checkbox:hover + label .bi-heart-fill{
+    color: red;
+  }
 
-//   .heart-checkbox + label {
-//     position: relative;
-    
-//   }
+  .heart-checkbox + label {
+    position: relative;
+  }
 
-//   .heart-container {
-//     display: inline-block;
-//     background-color: #0E3E4E;
-//     padding: 10px;
-//     border-radius: 0px 32px 0px 32px;
-    
-//   }
+  .heart-container {
+    display: flex;
+    background-color: #0E3E4E;
+    padding: 10px;
+    border-radius: 0px 32px 0px 32px;
+    position: absolute;
+  }
 
-//   .heart-checkbox + label .bi-heart-fill {
-//     display: inline-block;
-//     color: white;
-//   }
+  .heart-checkbox + label .bi-heart-fill {
+    display: inline-block;
+    color: white;
+  }
 
-//   .heart-checkbox:checked + label .bi-heart-fill {
-//     color: red;
-//   }
-
-  
-  
-// .container-xl {
-//     .col-3 {
-//       position: relative;
-//       margin-right: 0;
-//       padding-right: 0;
-//     }
-  
-//     .heart-container {
-//       position: absolute;
-//       display: inline-block;
-//       top: 0;
-//       left: 0;
-//       z-index: 2; // Set a higher z-index for the heart container
-//       background-color: transparent;
-//       padding: 10px;
-//       border-radius: 0px 32px 0px 32px;
-//     }
-  
-//     .heart-checkbox {
-//       display: none;
-//     }
-  
-//     .heart-checkbox + label {
-//       position: relative;
-//     }
-  
-//     .heart-checkbox + label .bi-heart-fill {
-//       display: inline-block;
-//       color: white;
-//     }
-  
-//     .heart-checkbox:checked + label .bi-heart-fill {
-//       color: red;
-//     }
-  
-//     .foodimages img {
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       z-index: 1; // Set a lower z-index for the image
-//       width: 182px;
-//     }
-  
-//     .cards {
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       z-index: 0; // Set the lowest z-index for the cards
-//       border-radius: 15px; // Adjust as needed
-//     }
-//   }
-  
-
-// .container-xl {
-//     .col-3 {
-//       position: relative;
-//       margin-right: 0;
-//       padding-right: 0;
-//     }
-  
-//     .heart-container {
-//       position: absolute;
-//       display: inline-flex;
-//       top: 0;
-//       left: 0;
-//       z-index: 2;
-//       background-color: transparent;
-//       padding: 10px;
-//       border-radius: 0px 32px 0px 32px;
-//     }
-  
-//     .heart-checkbox {
-//       display: none;
-//     }
-  
-//     .heart-checkbox + label {
-//       position: relative;
-//     }
-  
-//     .heart-checkbox + label .bi-heart-fill {
-//       display: inline-block;
-//       color: white;
-//     }
-  
-//     .heart-checkbox:checked + label .bi-heart-fill {
-//       color: red;
-//     }
-  
-//     .foodimages img {
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       z-index: 1;
-//       width: 182px;
-//     }
-  
-//     .card-container {
-//       display: flex;
-//       flex-wrap: wrap;
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       z-index: 0;
-//     }
-  
-//     .cards {
-//       border-radius: 15px;
-//       width: calc(33.3333% - 20px); /* Adjust width and margins as needed */
-//       margin: 10px;
-//     }
-//   }
-  
-
+  .heart-checkbox:checked + label .bi-heart-fill {
+    color: red;
+  }
   
 .circle {
     width: 525px;
@@ -339,9 +254,44 @@ $footercolour: #7F9599;
 .blue{
     border: blue 1px solid;
 }
+ .veg-bg{
+    background-image: url(/images/veg\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+ }
 
+ .veg2-bg{
+    background-image: url(/images/veg\ product\ page\ 1.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:left;
+ }
 
+ .bubble-container {
+    position: relative;
+  }
 
+  .speech-bubble {
+    position: absolute;
+    background-color: #fff; 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
+  }
+
+  .speech-bubble::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border: solid transparent;
+    border-right-color: $light;
+    border-width: 35px; 
+    margin-top: -85px; 
+    transform: rotate(90deg);
+  }
 
 
    @import "../node_modules/bootstrap/scss/bootstrap";

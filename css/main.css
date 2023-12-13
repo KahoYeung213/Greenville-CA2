@@ -7,12 +7,41 @@ a {
   text-decoration: none;
 }
 
+.basket {
+  background-color: #F4D9BE;
+  background-image: url(/images/Desktop\ -\ 1140px\ \(Recommended\).png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.rounded-4 {
+  overflow: auto;
+  height: 100%;
+}
+
 .footer {
   background-color: #7F9599;
 }
 
 .rounded-circle {
   background-color: #C1F1C6;
+}
+
+.product-add:hover {
+  color: #7F9599 !important;
+}
+
+.product-add {
+  transition: color 0.3s ease;
+}
+
+.category-box:hover {
+  background-color: #C1F1C6 !important;
+}
+
+.category-box {
+  transition: background-color 0.5s ease;
 }
 
 .fw-extrabold {
@@ -107,6 +136,35 @@ a {
   transition: 0.4s;
 }
 
+.heart-checkbox {
+  display: none;
+}
+
+.heart-checkbox:hover + label .bi-heart-fill {
+  color: red;
+}
+
+.heart-checkbox + label {
+  position: relative;
+}
+
+.heart-container {
+  display: flex;
+  background-color: #0E3E4E;
+  padding: 10px;
+  border-radius: 0px 32px 0px 32px;
+  position: absolute;
+}
+
+.heart-checkbox + label .bi-heart-fill {
+  display: inline-block;
+  color: white;
+}
+
+.heart-checkbox:checked + label .bi-heart-fill {
+  color: red;
+}
+
 .circle {
   width: 525px;
   height: 525px;
@@ -146,6 +204,45 @@ a {
 
 .blue {
   border: blue 1px solid;
+}
+
+.veg-bg {
+  background-image: url(/images/veg\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.veg2-bg {
+  background-image: url(/images/veg\ product\ page\ 1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.bubble-container {
+  position: relative;
+}
+
+.speech-bubble {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border: solid transparent;
+  border-right-color: #f8f9fa;
+  border-width: 35px;
+  margin-top: -85px;
+  transform: rotate(90deg);
 }
 
 /*!
