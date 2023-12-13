@@ -17,11 +17,36 @@ $spacers: (
   6: $spacer * 4,
   7: $spacer * 5,
   8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 7.3,
+
 
 ) !default;
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+
+}
+
 $primary: #4B6468;
 $secondary:#F4F4BE;
+$tertiary: #4F5D62;
+$customcolour: #C1F1C6;
+$footercolour: #7F9599;
+
+.footer{
+    background-color: $footercolour;
+}
+.rounded-circle{
+    background-color: $customcolour;
+
+}
+
+
 
 .fw-extrabold {
     font-weight: 800 !important;
@@ -36,11 +61,6 @@ $secondary:#F4F4BE;
 @import "../node_modules/bootstrap/scss/mixins";
 
 
-p {
-  margin-bottom: $paragraph-margin-bottom !important;
-}
-
-$btn-border-radius: $btn-border-radius;
 
 .btn-group{
     position:relative;
@@ -134,30 +154,148 @@ $btn-border-radius: $btn-border-radius;
     }
 }
 
-#heart-checkbox {
-    display: none; 
-}
+// .heart-checkbox {
+//     display: none;
+//   }
 
-#heart-checkbox + label {
-    position: relative;
-}
+//   .heart-checkbox + label {
+//     position: relative;
+    
+//   }
 
-.heart-container {
-    display: inline-block;
-    background-color: #0E3E4E; 
-    padding: 10px; 
-    border-radius: 0px 32px 0px 32px; 
-}
+//   .heart-container {
+//     display: inline-block;
+//     background-color: #0E3E4E;
+//     padding: 10px;
+//     border-radius: 0px 32px 0px 32px;
+    
+//   }
 
-#heart-checkbox + label .bi-heart-fill {
-    display: inline-block;
-    color: white; 
-}
+//   .heart-checkbox + label .bi-heart-fill {
+//     display: inline-block;
+//     color: white;
+//   }
 
-#heart-checkbox:checked + label .bi-heart-fill {
-    color: red; 
-}
+//   .heart-checkbox:checked + label .bi-heart-fill {
+//     color: red;
+//   }
 
+  
+  
+// .container-xl {
+//     .col-3 {
+//       position: relative;
+//       margin-right: 0;
+//       padding-right: 0;
+//     }
+  
+//     .heart-container {
+//       position: absolute;
+//       display: inline-block;
+//       top: 0;
+//       left: 0;
+//       z-index: 2; // Set a higher z-index for the heart container
+//       background-color: transparent;
+//       padding: 10px;
+//       border-radius: 0px 32px 0px 32px;
+//     }
+  
+//     .heart-checkbox {
+//       display: none;
+//     }
+  
+//     .heart-checkbox + label {
+//       position: relative;
+//     }
+  
+//     .heart-checkbox + label .bi-heart-fill {
+//       display: inline-block;
+//       color: white;
+//     }
+  
+//     .heart-checkbox:checked + label .bi-heart-fill {
+//       color: red;
+//     }
+  
+//     .foodimages img {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       z-index: 1; // Set a lower z-index for the image
+//       width: 182px;
+//     }
+  
+//     .cards {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       z-index: 0; // Set the lowest z-index for the cards
+//       border-radius: 15px; // Adjust as needed
+//     }
+//   }
+  
+
+// .container-xl {
+//     .col-3 {
+//       position: relative;
+//       margin-right: 0;
+//       padding-right: 0;
+//     }
+  
+//     .heart-container {
+//       position: absolute;
+//       display: inline-flex;
+//       top: 0;
+//       left: 0;
+//       z-index: 2;
+//       background-color: transparent;
+//       padding: 10px;
+//       border-radius: 0px 32px 0px 32px;
+//     }
+  
+//     .heart-checkbox {
+//       display: none;
+//     }
+  
+//     .heart-checkbox + label {
+//       position: relative;
+//     }
+  
+//     .heart-checkbox + label .bi-heart-fill {
+//       display: inline-block;
+//       color: white;
+//     }
+  
+//     .heart-checkbox:checked + label .bi-heart-fill {
+//       color: red;
+//     }
+  
+//     .foodimages img {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       z-index: 1;
+//       width: 182px;
+//     }
+  
+//     .card-container {
+//       display: flex;
+//       flex-wrap: wrap;
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       z-index: 0;
+//     }
+  
+//     .cards {
+//       border-radius: 15px;
+//       width: calc(33.3333% - 20px); /* Adjust width and margins as needed */
+//       margin: 10px;
+//     }
+//   }
+  
+
+  
 .circle {
     width: 525px;
     height: 525px;
@@ -196,6 +334,10 @@ $btn-border-radius: $btn-border-radius;
 
 .red{
     border: red 1px solid;
+}
+
+.blue{
+    border: blue 1px solid;
 }
 
 
