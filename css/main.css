@@ -22,11 +22,6 @@
   background-position: bottom;
 }
 
-.rounded-4 {
-  overflow: auto;
-  height: 100%;
-}
-
 .footer {
   background-color: #7F9599;
 }
@@ -55,10 +50,6 @@
   font-weight: 800 !important;
 }
 
-.container-fluid.bg-secondary, .bg-secondary.container-xxl, .bg-secondary.container-xl, .bg-secondary.container-lg, .bg-secondary.container-md, .bg-secondary.container-sm {
-  background-color: #F4F4BE;
-}
-
 .btn-group {
   position: relative;
   z-index: 2;
@@ -75,7 +66,7 @@
   border: none;
 }
 .btn-group label:hover {
-  background-color: #ccc;
+  background-color: #cccccc;
 }
 
 .btn-custom::after {
