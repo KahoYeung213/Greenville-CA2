@@ -1,17 +1,24 @@
 @charset "UTF-8";
-li {
-  list-style: none;
+.basketbrown {
+  color: #411530;
 }
 
-a {
-  text-decoration: none;
+.basketorange {
+  color: #D35936;
+}
+
+.basketbrownbg {
+  background-color: #411530;
+}
+
+.basketorangebg {
+  background-color: #D35936;
 }
 
 .basket {
   background-color: #F4D9BE;
   background-image: url(/images/Desktop\ -\ 1140px\ \(Recommended\).png);
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: bottom;
 }
 

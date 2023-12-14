@@ -23,27 +23,34 @@ $spacers: (
 
 ) !default;
 
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-
-}
-
 $primary: #4B6468;
 $secondary:#F4F4BE;
 $tertiary: #4F5D62;
 $customcolour: #C1F1C6;
 $footercolour: #7F9599;
 $basketbg:#F4D9BE;
+$basketorange: #D35936;
+$basketbrown: #411530;
 
+.basketbrown{
+  color: $basketbrown;
+}
+
+.basketorange{
+  color: $basketorange;
+}
+
+.basketbrownbg{
+  background-color: $basketbrown;
+}
+
+.basketorangebg{
+  background-color: $basketorange;
+}
 .basket{
     background-color: $basketbg;
     background-image: url(/images/Desktop\ -\ 1140px\ \(Recommended\).png);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position:bottom;}
 
 
