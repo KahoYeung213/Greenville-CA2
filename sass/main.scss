@@ -25,7 +25,7 @@ $spacers: (
 
 $primary: #4B6468;
 $secondary:#F4F4BE;
-$customcolour: #bebef4;
+$customcolour: #F4D9BE;
 $footercolour: #7F9599;
 $basketbg:#F4D9BE;
 $basketorange: #D35936;
@@ -86,11 +86,11 @@ $basketbrown: #411530;
 .btn-group{
     position:relative;
     z-index: 2;
-    margin-top: -150px;
+    margin-top: -3.125rem;
 }
 
 .btn-group label {
-    width: 250px; 
+    width: 15.625rem; 
     border-radius: $btn-border-radius;
     position: relative;
     overflow: hidden;
@@ -98,7 +98,7 @@ $basketbrown: #411530;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
     &:hover {
-        background-color: #cccccc; 
+        background-color: #cac9c9; 
     }
 
     border: none;
@@ -205,8 +205,8 @@ $basketbrown: #411530;
   }
   
 .circle {
-    width: 525px;
-    height: 525px;
+    width: 32.813rem;
+    height: 32.813rem;
     background-color: #5F7A80;
     border-radius: 50%;
     display: flex;
@@ -225,15 +225,6 @@ $basketbrown: #411530;
     align-items: start;
     display:grid;
 }
-
-.col-md-6 h4{
- line-height: 150%;
- margin-right: 250px;
- font-weight: 500;
-}
-
-
-
    .square-image {
     object-fit: cover;
     border-radius: 15px 15px 15px 15px; 
